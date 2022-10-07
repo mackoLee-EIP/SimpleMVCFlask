@@ -1,12 +1,19 @@
 from flask import Blueprint
 from macko.service import simple_service
-
+from macko.utils import my_request
 blueprint = Blueprint('app', __name__, url_prefix='/simple')
 
 
-@blueprint.route('/test')
+@blueprint.get('/test')
 def test():
-    return simple_service.test()
+    query = my_request.get_query()
+    return simple_service.test(query)
+
+
+@blueprint.route('/test', methods=["POST"])
+def post_test():
+    params = my_request.get_params()
+    return simple_service.test(params)
 
 
 @blueprint.route('/test_db')

@@ -11,12 +11,5 @@ error_handle(app)
 register_blueprint_handle(app)
 
 
-
-@app.route('/')
-def test():
-    abort(400)
-    return 'hello world'
-
-
 if __name__ == '__main__':
     app.run('0.0.0.0',8080)

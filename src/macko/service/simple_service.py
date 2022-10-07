@@ -4,8 +4,8 @@ from macko.repository.simple_repository import SimpleRepository
 simple_repository = SimpleRepository()
 
 
-def test():
-    return 'test'
+def test(params):
+    return params
 
 
 def test_db():
