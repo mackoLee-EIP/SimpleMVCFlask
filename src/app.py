@@ -1,4 +1,7 @@
-from flask import Flask, abort
+import sys
+sys.path.append('')
+
+from flask import Flask
 from macko.utils.config_handler import config_handle
 from macko.utils.error_handler import error_handle
 from macko.utils.register_blueprint_handler import register_blueprint_handle
