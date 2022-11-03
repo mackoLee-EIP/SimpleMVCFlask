@@ -1,6 +1,7 @@
 from macko.controller import simple_controller
 
 
+
 def register_blueprint_handle(app):
     controllers = [
         simple_controller

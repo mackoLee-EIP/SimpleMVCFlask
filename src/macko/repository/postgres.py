@@ -1,7 +1,6 @@
 import psycopg2
 from macko.utils.config_handler import get_database_config
 
-
 class Postgres:
     table = None
     conn = None
@@ -14,6 +13,9 @@ class Postgres:
             "host": get_database_config("host"),
             "port": get_database_config("port")
         }
+
+    def save(self):
+        pass
 
     def find_all(self):
         cur = self.execute_sql(f"select * from {self.table}")

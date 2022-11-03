@@ -1,6 +1,7 @@
 # 시작하기
 ## step 1. 가상환경 만들기
   - 독립적인 개발환경을 원하신다면 가상환경을 만든 후 실행 해주세요!
+  - 참고로 제가 개발한 환경은 맥북 M1 Pro OS Monterey 입니다.
 ```shell
 python3 -m venv ./venv
 ```
@@ -32,5 +33,5 @@ python src/app.py
 
 ## tips
   - 개발
-    - package 내의 python 파일이 package 를 찾지 못하는 경우 src 파일을 source root 설정 해주면 에러가 나지 않는다.
+    - package 내의 python 파일이 package 를 찾지 못하는 경우 src 파일을 source root 설정 해주면 에러가 나지 않습니다.
   - 
